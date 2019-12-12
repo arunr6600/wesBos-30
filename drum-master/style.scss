@@ -1,0 +1,114 @@
+//out :style.css
+
+body {
+    background-color: #000;
+    user-select: none;
+}
+
+.drum--container {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-image: url('./images/bg.png');
+    background-position: center;
+    margin: auto;
+
+    .drum {
+
+        transition: all 0.07s;
+    }
+
+    .plate1 {
+        position: absolute;
+        left: 274px;
+        top: 42px;
+        opacity: 0.3;
+    }
+
+    .plate1.active {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    .drum1 {
+        position: absolute;
+        left: 340px;
+        top: 299px;
+        opacity: 0.3;
+    }
+
+    .drum1.active {
+        opacity: 1;
+    }
+
+    .drum2 {
+        position: absolute;
+        left: 460px;
+        top: 192px;
+        opacity: 0.3;
+    }
+
+    .drum2.active {
+        opacity: 1;
+    }
+
+    .drum3 {
+        position: absolute;
+        left: 665px;
+        top: 199px;
+        opacity: 0.3;
+    }
+        .drum3.active {
+            opacity: 1;
+        }
+
+        .drum4 {
+            position: absolute;
+            left: 486px;
+            top: 311px;
+            opacity: 0.3;
+        }
+
+        .drum4.active {
+            opacity: 1;
+        }
+
+        .plate2 {
+            position: absolute;
+            left: 764px;
+            top: 71px;
+            opacity: 0.3;
+        }
+
+        .plate2.active {
+            opacity: 1;
+        }
+    }
+
+
+    .key {
+        text-align: center;
+        transition: all 0.07s;
+        background-color: #000;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+
+    }
+
+    .playing {
+        transform: scale(1.1);
+        border-color: #ffc600;
+
+        .sound {
+            color: #fff;
+            text-align: center;
+        }
+    }
